@@ -1,0 +1,27 @@
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# MySQL specific
+*.sql~
+*.sql.bak
+
+# Backup files
+*.bak
+*.backup
+
+# Log files
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
