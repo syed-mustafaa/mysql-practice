@@ -40,6 +40,11 @@ This repository contains structured MySQL practice queries covering basic to adv
 - LeetCode-style database questions
 - Real-world scenario queries
 
+### Window Functions (Advanced)
+- Ranking: `ROW_NUMBER`, `RANK`, `DENSE_RANK`, `NTILE`
+- Analytic: `LEAD`, `LAG`, `FIRST_VALUE`
+- Aggregates over windows: Running totals, moving averages
+
 ## 🛠️ Tools Used
 
 - **MySQL Shell** (`mysqlsh`)
@@ -54,6 +59,7 @@ mysql-practice/
 ├── joins/            # JOIN operations
 ├── subqueries/       # Nested queries
 ├── constraints/      # Database constraints
+├── window_functions/ # Advanced analytics (RANK, LEAD/LAG)
 └── interview_questions/  # Interview-style problems
 ```
 
