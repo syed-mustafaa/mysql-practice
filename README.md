@@ -41,6 +41,7 @@ This repository contains structured MySQL practice queries covering basic to adv
 - Real-world scenario queries
 
 ### Stored Procedures & Logic
+**"Shows you can write database logic"**
 - Creating Procedures (`DELIMITER`, `CREATE PROCEDURE`)
 - Parameters (`IN`, `OUT`, `INOUT`)
 - Control Flow (`IF/ELSE`, Loops)
@@ -108,8 +109,8 @@ WHERE ...;
 - [x] JOIN operations
 - [x] Subqueries
 - [ ] Advanced aggregations
-- [ ] Window functions
-- [ ] Stored procedures
+- [x] Window functions
+- [x] Stored procedures
 
 ## 🎓 Learning Resources
 
