@@ -15,6 +15,7 @@ This repository contains structured MySQL practice queries covering basic to adv
 - WHERE clauses
 - ORDER BY sorting
 - LIMIT and pagination
+- REGEXP (Pattern matching with Regular Expressions)
 
 ### Joins
 - INNER JOIN
