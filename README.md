@@ -16,6 +16,7 @@ This repository contains structured MySQL practice queries covering basic to adv
 - ORDER BY sorting
 - LIMIT and pagination
 - REGEXP (Pattern matching with Regular Expressions)
+- LIKE (`%a`, `a%`, `_`) with vowel examples
 
 ### Joins
 - INNER JOIN
