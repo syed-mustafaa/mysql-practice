@@ -17,6 +17,7 @@ This repository contains structured MySQL practice queries covering basic to adv
 - LIMIT and pagination
 - REGEXP (Pattern matching with Regular Expressions)
 - LIKE (`%a`, `a%`, `_`) with vowel examples
+- Euclidean Distance (`SQRT`, `POW`) — nearest/farthest point problems
 
 ### Joins
 - INNER JOIN
