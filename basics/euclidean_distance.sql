@@ -180,3 +180,51 @@ ORDER BY distance;
 -- 3. Self-join (p1.id < p2.id) is used to avoid duplicate pairs
 -- 4. Can be combined with LIMIT for nearest/farthest queries
 -- 5. CASE + distance = classify points into zones (geo-filtering)
+
+
+-- ============================================
+-- HackerRank Problem: Weather Observation Station 18
+-- ============================================
+-- Source: HackerRank SQL Advanced (Weather Observation Station 18)
+-- Link: https://www.hackerrank.com/challenges/weather-observation-station-18
+--
+-- Table: STATION
+-- Columns: ID, CITY, STATE, LAT_N, LONG_W
+--
+-- Problem:
+-- Consider P1(a, c) and P2(b, d) to be two points on a 2D plane where
+-- (a, c) is the minimum LAT_N and LONG_W, and
+-- (b, d) is the maximum LAT_N and LONG_W.
+-- Query the Manhattan Distance (|a - b| + |c - d|) rounded to 4 decimal places.
+
+-- Solution (Manhattan Distance):
+SELECT ROUND(ABS(MIN(LAT_N) - MAX(LAT_N)) + ABS(MIN(LONG_W) - MAX(LONG_W)), 4)
+FROM STATION;
+
+
+-- ============================================
+-- HackerRank Problem: Weather Observation Station 19
+-- ============================================
+-- Source: HackerRank SQL Advanced (Weather Observation Station 19)
+-- Link: https://www.hackerrank.com/challenges/weather-observation-station-19
+--
+-- Problem:
+-- Same P1(a, c) and P2(b, d) as above.
+-- Query the EUCLIDEAN distance between P1 and P2, rounded to 4 decimal places.
+-- This is the more advanced version of Station 18 (Euclidean instead of Manhattan)
+
+-- Solution (Euclidean Distance - the one you did!):
+SELECT ROUND(SQRT(POW(MAX(LAT_N) - MIN(LAT_N), 2) + POW(MAX(LONG_W) - MIN(LONG_W), 2)), 4)
+FROM STATION;
+
+-- Breakdown:
+-- MIN(LAT_N)  → x1 (smallest latitude)
+-- MAX(LAT_N)  → x2 (largest latitude)
+-- MIN(LONG_W) → y1 (smallest longitude)
+-- MAX(LONG_W) → y2 (largest longitude)
+-- SQRT((x2-x1)^2 + (y2-y1)^2) → classic Euclidean formula
+-- ROUND(..., 4) → 4 decimal places as required
+
+-- Key Difference:
+-- Station 18 → Manhattan Distance  = |a-b| + |c-d|    (add absolute differences)
+-- Station 19 → Euclidean Distance  = SQRT((a-b)^2 + (c-d)^2) (Pythagoras theorem)
