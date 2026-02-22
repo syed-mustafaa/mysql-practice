@@ -228,3 +228,27 @@ FROM STATION;
 -- Key Difference:
 -- Station 18 → Manhattan Distance  = |a-b| + |c-d|    (add absolute differences)
 -- Station 19 → Euclidean Distance  = SQRT((a-b)^2 + (c-d)^2) (Pythagoras theorem)
+
+
+-- ============================================
+-- Manhattan vs Euclidean Distance — Quick Reference
+-- ============================================
+--
+-- +---------------------+-----------------------------------+-----------------------------------+
+-- | Feature             | Manhattan Distance                | Euclidean Distance                |
+-- +---------------------+-----------------------------------+-----------------------------------+
+-- | Also Called         | Taxicab / City Block Distance     | Straight-Line / L2 Distance       |
+-- | Formula             | |x2-x1| + |y2-y1|                | SQRT((x2-x1)^2 + (y2-y1)^2)      |
+-- | MySQL Syntax        | ABS(x2-x1) + ABS(y2-y1)          | SQRT(POW(x2-x1,2)+POW(y2-y1,2))  |
+-- | Path                | Grid-like (horizontal + vertical) | Direct straight line              |
+-- | HackerRank Problem  | Weather Observation Station 18    | Weather Observation Station 19    |
+-- | When to Use         | Grid maps, city navigation        | Real-world straight-line distance |
+-- | Speed               | Faster (no SQRT)                  | Slightly slower (uses SQRT)       |
+-- | Result              | >= Euclidean (always longer)      | Shortest possible distance        |
+-- +---------------------+-----------------------------------+-----------------------------------+
+--
+-- Simple Example: P1=(0,0), P2=(3,4)
+--   Manhattan  = |3-0| + |4-0| = 3 + 4           = 7
+--   Euclidean  = SQRT((3)^2 + (4)^2) = SQRT(25)  = 5
+--
+-- Rule: Manhattan >= Euclidean (always, for any two points)
