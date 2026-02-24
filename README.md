@@ -18,6 +18,7 @@ This repository contains structured MySQL practice queries covering basic to adv
 - REGEXP (Pattern matching with Regular Expressions)
 - LIKE (`%a`, `a%`, `_`) with vowel examples
 - Euclidean Distance (`SQRT`, `POW`) — nearest/farthest point problems
+- Aliases (`AS`) — giving temporary names to columns and tables
 
 ### Joins
 - INNER JOIN
