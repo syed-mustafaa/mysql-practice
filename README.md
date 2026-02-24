@@ -19,6 +19,7 @@ This repository contains structured MySQL practice queries covering basic to adv
 - LIKE (`%a`, `a%`, `_`) with vowel examples
 - Euclidean Distance (`SQRT`, `POW`) — nearest/farthest point problems
 - Aliases (`AS`) — giving temporary names to columns and tables
+- Comments (`--`, `#`, `/* */`) — documenting and disabling code
 
 ### Joins
 - INNER JOIN
