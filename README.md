@@ -33,11 +33,10 @@ This repository contains structured MySQL practice queries covering basic to adv
 - Subqueries in SELECT, WHERE, and FROM
 
 ### Constraints
-- PRIMARY KEY
-- FOREIGN KEY
-- UNIQUE
-- NOT NULL
-- CHECK constraints
+- PRIMARY KEY & UNIQUE
+- FOREIGN KEY (Referential Integrity & Actions)
+- NOT NULL, DEFAULT, and CHECK constraints
+- Data integrity and validation rules
 
 ### Interview Questions
 - Company-specific SQL problems
